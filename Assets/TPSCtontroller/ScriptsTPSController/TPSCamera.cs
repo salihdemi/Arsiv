@@ -19,7 +19,7 @@ public class TPSCamera : MonoBehaviour
     }
     void Update()
     {
-        transporterX.Rotate(Vector3.right * sensitivity * Input.GetAxis("Mouse Y") * 100 * Time.deltaTime);
+        transporterX.Rotate(Vector3.right * sensitivity * Input.GetAxis("Mouse Y") * -100 * Time.deltaTime);
         transporterY.Rotate(Vector3.up * sensitivity * Input.GetAxis("Mouse X") * 100 * Time.deltaTime);
     }
     private void FixedUpdate()
